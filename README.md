@@ -1,4 +1,5 @@
-# PumpFunBumpBot
+# 🚀 Pump.Fun Bump Bot: Automate Your Trading on Pump.fun & Raydium! 🚀
+
 Free to use bump bot for your pump fun tokens.
 
 # pump-fun-bump-bot  
@@ -8,130 +9,107 @@ This bot buy and sell automatically on pump.fun and raydium
 it can be used to be displayed on the main page of pump.fun
 ## Demo  
 
-[![Demo](https://img.youtube.com/vi/KIq8JfL0Ws0/0.jpg)](https://www.youtube.com/watch?v=c6FyrAK1pP4) 
+[![Demo](https://img.youtube.com/vi/9QUKFEqnRuU/0.jpg)](https://www.youtube.com/watch?v=9QUKFEqnRuU) 
   
 
-## Download the bot
+🚀 Pump.Fun Bump Bot: Automate Your Trading on Pump.fun & Raydium! 🚀
+Welcome to the Pump.Fun Bump Bot repository! This bot automates buying and selling on Pump.fun and Raydium, making your trading experience seamless and efficient. Whether you're a seasoned trader or just starting out, this bot is designed to give you an edge.
 
-If you have git installed on your computer you can fetch the content of this repository with the command
+📺 Demo
+See the Pump.Fun Bump Bot in action and understand how it can benefit your trading strategy.
 
-``` 
+⬇️ Download the Bot
+### Git
+If you have git installed on your computer, you can fetch the content of this repository with the command:
+
 git clone https://github.com/joip1/Pump.FunBumpBot.git
-```
 
-Else, you can download the repository in a zip here : https://github.com/joip1/Pump.FunBumpBot/archive/refs/heads/master.zip
+### 📦 ZIP
+Alternatively, you can download the repository as a ZIP file here.
 
-## Environment setup
+### 💻 Replit
+You can also use this bot on Replit, an online coding platform. Simply fork the repository and start coding without any setup hassle. Try it on Replit.
 
-you need to install nodejs :
+🔧 Environment Setup
+You need to install Node.js:
 
-For Windows : https://nodejs.org/dist/v22.2.0/node-v22.2.0-x64.msi
+- **Windows:** Download Node.js
+- **MacOS:** Download Node.js
+- **Linux:** Execute in a terminal:
 
-For MacOS : https://nodejs.org/dist/v22.2.0/node-v22.2.0.pkg
-
-For Linux, execute in a terminal : 
-
-```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
 nvm install 22
-```
 
-To check if nodejs is installed : 
+To check if Node.js is installed, run the following command in your terminal or command prompt:
 
-- on Windows, open a cmd.exe, and run the command : 
-
-```
 node -v
-```
+It should return the version of Node.js.
 
-- On MacOs & linux, open a terminal, and run the same command : 
+📦 Dependency Installation
+In a terminal or command prompt, navigate to the folder of the pump-fun-bump-bot with the command:
 
-```
-node -v
-```
-
-It should return the version of nodejs.
-
-## Dependency installation
-
-In a cmd.exe or a terminal, go to the folder of the pump-fun-bump-bot with the command :
-
-```
 cd /path/to/the/folder
-```
 
-Then, in your cmd.exe / terminal, start the command :
+Then, install all the dependencies with:
 
-```
 npm install
-```
+This should create a new folder named node_modules with all the dependencies.
 
-It should install all the dependencies in a new folder named "node_modules".
+⚙️ Setup Configuration in index.js
+You have three things to set up:
 
-## Setup configuration in the index.js script
+- **RPC Endpoint:** Connect to the Solana blockchain (Quicknode or Helius provide good free RPC endpoints).
+- **Private Key:** The private key of the wallet that will buy and sell.
+- **Token Address:** The contract address of the token you want to bump.
 
-You have three things to setup : 
+The variables are at the top of the script:
 
-- The RPC endpoint to connect you to the Solana blockchain (Quicknode or Helius provide good free RPC endpoints)
+const RPC_URL = ""; // Quicknode or Helius RPC URL
+const PRIVKEY = ""; // Private key for transactions
+const TOKEN_ADDR = ""; // Token contract address
 
-- The private key of the wallet who will buy and sell 
+▶️ Run the Bump Bot
+To run the bump bot, in a terminal or command prompt, start the command:
 
-- The contract address of the token you want to bump
-
-The variables are on the top of the script : 
-
-```
-const RPC_URL = ""; // Quicknode or Helius give good rpc urls
-const PRIVKEY = ""; // the private key of the account who will buy and sell
-const TOKEN_ADDR = ""; // Put the address of the token you want to bump here
-```
-## Run the bump bot
-
-To run the bump bot, in a cmd.exe or a terminal, start the command:
-
-```
 node index.js
-```
+The bot will buy 4 times, then sell all the balance.
 
-And it's all. The bot will buy 4 times, then sell all the balance.
+🔄 Adjustments
+### Buy Frequency
+To adjust the number of buys before selling, modify the while loop at the bottom of the script:
 
-## Adjustments
-
-If you want to buy more or less times before selling, it's at the bottom of the script, in the while loop : 
-
-```
 // Buy
 promises.push(swap(SOL_ADDR, TOKEN_ADDR, solanaTracker, keypair, connexion, SOL_BUY_AMOUNT));
 promises.push(swap(SOL_ADDR, TOKEN_ADDR, solanaTracker, keypair, connexion, SOL_BUY_AMOUNT));
 promises.push(swap(SOL_ADDR, TOKEN_ADDR, solanaTracker, keypair, connexion, SOL_BUY_AMOUNT));
 promises.push(swap(SOL_ADDR, TOKEN_ADDR, solanaTracker, keypair, connexion, SOL_BUY_AMOUNT));
-```
 
-If you want to buy only 2 times for example, you just have to remove 2 lines, like this : 
+For example, to buy only 2 times, remove 2 lines:
 
-```
 // Buy
 promises.push(swap(SOL_ADDR, TOKEN_ADDR, solanaTracker, keypair, connexion, SOL_BUY_AMOUNT));
 promises.push(swap(SOL_ADDR, TOKEN_ADDR, solanaTracker, keypair, connexion, SOL_BUY_AMOUNT));
-```
 
-Also, for the buy amount in SOL, this can be setup in the top of the script, you can adjust it : 
+### Buy Amount
+Adjust the amount of SOL to buy at the top of the script:
 
-```
-const SOL_BUY_AMOUNT = 0.011; // here you can choose to increase/decrease the buy amount
-```
+const SOL_BUY_AMOUNT = 0.011; // Adjust buy amount
 
-Same for the slippage, this can be setup in the top of the script, you can adjust it :
+### Slippage and Fees
+Adjust the slippage and transaction fees at the top of the script:
 
-```
-const SLIPPAGE = 20; // here you can adjust the slippage
-```
+const SLIPPAGE = 20; // Adjust slippage
+const FEES = 0.0005; // Adjust fees
 
-Same for the fees (more fees = more speed), this can be setup in the top of the script, you can adjust it :
+🔗 Links
+- **GitHub Repository:** Pump.FunBumpBot
+- **Download ZIP:** Pump.FunBumpBot.zip
+- **Replit:** Try it on Replit
 
-```
-const FEES = 0.0005; // here you can adjust the fees
-```
+🌐 Join the Community
+- **Discord:** Join our Discord
+- **Twitter:** Follow us on Twitter
 
-Happy bumping!
+👍 Like, Comment, and Subscribe for more tutorials! 👍
+
+Happy bumping and happy trading! 🚀💰
