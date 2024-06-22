@@ -3,8 +3,8 @@ import {SolanaTracker} from "solana-swap";
 import {performSwap, SOL_ADDR} from "./lib.js";
 import base58 from "bs58";
 
-const RPC_URL = "https://api.mainnet-beta.solana.com"; // Quicknode or Helius give good rpc urls
-const PRIVKEY = "x"; // the private key of the account who will buy and sell, in base58 (phantom export for example)
+const RPC_URL = ""; // Quicknode or Helius give good rpc urls
+const PRIVKEY = ""; // the private key of the account who will buy and sell, in base58 (phantom export for example)
 const TOKEN_ADDR = ""; // Put the address of the token you want to bump here
 
 const SOL_BUY_AMOUNT = 0.011; // here you can choose to increase/decrease the buy amount
@@ -54,7 +54,7 @@ async function getTokenBalance(connection, owner, tokenAddr) {
     }catch{
         return result;
     }
-
+    
 }
 
 async function main() {

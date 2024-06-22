@@ -1,21 +1,21 @@
 {
-  "name": "nodejs",
+  "name": "bump-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@solana/web3.js": "^1.93.0",
-    "@types/node": "^18.0.6",
+    "@solana/web3.js": "^1.91.2",
+    "borsh": "^2.0.0",
     "bs58": "^5.0.0",
-    "dotenv": "^16.4.5",
-    "node-fetch": "^3.3.2",
-    "node-telegram-bot-api": "^0.66.0",
-    "solana-swap": "^1.0.14"
+    "solana-swap": "^1.0.9"
+  },
+  "resolutions": {
+    "rpc-websockets": "7.11.0"
   }
 }
