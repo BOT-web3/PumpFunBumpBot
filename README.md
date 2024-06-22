@@ -99,14 +99,11 @@ const SLIPPAGE = 20; // Adjust slippage
 const FEES = 0.0005; // Adjust fees
 
 🔗 Links
-- **GitHub Repository:** Pump.FunBumpBot
-- **Download ZIP:** Pump.FunBumpBot.zip
-- **Replit:** Try it on Replit
 
-🌐 Join the Community
-- **Discord:** Join our Discord
-- **Twitter:** Follow us on Twitter
-
+- **Replit:** Try it on Replit https://replit.com/
+- **helius:** https://helius.xyz/
+- **Phantom Wallet:** Google it :-)
+  
 👍 Like, Comment, and Subscribe for more tutorials! 👍
 
 Happy bumping and happy trading! 🚀💰
