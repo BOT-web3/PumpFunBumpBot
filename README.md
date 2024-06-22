@@ -109,3 +109,19 @@ const FEES = 0.0005; // Adjust fees
 Happy bumping and happy trading! 🚀💰
 
 DONTATION SOL : 8oHBLten4hH8BoRngqi9NaBkGE7E5hs9qtVSW4rQ4Mj9
+
+
+
+
+
+
+
+
+
+<br />
+
+<div align="center">
+    <a href="https://visit-counter.vercel.app/">
+        <img src="https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fgithub.com%2FdevXprite%2Fvisit-counter&s=70&c=00ff00&bg=00000000&no=3&ff=digii" alt="visits">
+    </a>
+</div>
