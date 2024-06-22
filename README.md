@@ -30,9 +30,9 @@ You can also use this bot on Replit, an online coding platform. Simply fork the 
 🔧 Environment Setup
 You need to install Node.js:
 
-- **Windows:** Download Node.js
-- **MacOS:** Download Node.js
-- **Linux:** Execute in a terminal:
+- **Windows:** Download Node.js https://nodejs.org/dist/v22.2.0/node-v22.2.0-x64.msi
+- **MacOS:** Download Node.js   https://nodejs.org/dist/v22.2.0/node-v22.2.0.pkg
+- **Linux:** Execute in a terminal: 
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 22
