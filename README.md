@@ -5,16 +5,15 @@ Free to use bump bot for your pump fun tokens.
 This bot buy and sell automatically on pump.fun and raydium
  
 it can be used to be displayed on the main page of pump.fun
-## Demo [Youtube]
+# 📺 Demo
+See the Pump.Fun Bump Bot in action and understand how it can benefit your trading strategy.
+ [Youtube]
 
 [![Demo](https://img.youtube.com/vi/9QUKFEqnRuU/0.jpg)](https://www.youtube.com/watch?v=9QUKFEqnRuU) 
   
 
 🚀 Pump.Fun Bump Bot: Automate Your Trading on Pump.fun & Raydium! 🚀
 Welcome to the Pump.Fun Bump Bot repository! This bot automates buying and selling on Pump.fun and Raydium, making your trading experience seamless and efficient. Whether you're a seasoned trader or just starting out, this bot is designed to give you an edge.
-
-📺 Demo
-See the Pump.Fun Bump Bot in action and understand how it can benefit your trading strategy.
 
 ⬇️ Download the Bot
 ### Git
