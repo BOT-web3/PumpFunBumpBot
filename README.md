@@ -22,7 +22,7 @@ See the Pump.Fun Bump Bot in action and understand how it can benefit your tradi
 ### Git
 If you have git installed on your computer, you can fetch the content of this repository with the command:
 
-git clone https://github.com/joip1/Pump.FunBumpBot.git
+git clone https://github.com/BOT-web3/Pump.FunBumpBot.git
 
 ### 📦 ZIP
 Alternatively, you can download the repository as a ZIP file here.
