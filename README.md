@@ -113,3 +113,5 @@ const FEES = 0.0005; // Adjust fees
 👍 Like, Comment, and Subscribe for more tutorials! 👍
 
 Happy bumping and happy trading! 🚀💰
+
+DONTATION SOL : 8oHBLten4hH8BoRngqi9NaBkGE7E5hs9qtVSW4rQ4Mj9
